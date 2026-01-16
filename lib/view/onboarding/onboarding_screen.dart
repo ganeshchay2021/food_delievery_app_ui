@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app/constant/const.dart';
-import 'package:food_delivery_app/view/home/home_screen.dart';
+import 'package:food_delivery_app/view/botton_navbar.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -115,7 +115,7 @@ class OnboardingScreen extends StatelessWidget {
                               Navigator.pushAndRemoveUntil(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => BottomNavbar(),
                                 ),
                                 (route) => false,
                               );
