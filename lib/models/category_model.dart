@@ -1,19 +1,19 @@
-class Category {
+class MyCategory {
   String image, name;
 
-  Category({required this.image, required this.name});
+  MyCategory({required this.image, required this.name});
 }
 
-List<Category> myCategories = [
-  Category(
+List<MyCategory> myCategories = [
+  MyCategory(
     image: 'assets/images/burger.png',
     name: 'Burger',
   ),
-  Category(
+  MyCategory(
     image: 'assets/images/pizza (1).png',
     name: 'Pizza',
   ),
-  Category(
+  MyCategory(
     image: 'assets/images/cup cake.png',
     name: 'Cup Cake',
   ),
