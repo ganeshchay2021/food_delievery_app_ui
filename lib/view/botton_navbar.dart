@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery_app/view/favourite_screen.dart';
+import 'package:food_delivery_app/view/otherscreens/favourite_screen.dart';
 import 'package:food_delivery_app/view/home/home_screen.dart';
-import 'package:food_delivery_app/view/notification_screen.dart';
-import 'package:food_delivery_app/view/profile_screen.dart';
-import 'package:food_delivery_app/view/search_screen.dart';
+import 'package:food_delivery_app/view/otherscreens/notification_screen.dart';
+import 'package:food_delivery_app/view/otherscreens/profile_screen.dart';
+import 'package:food_delivery_app/view/otherscreens/search_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});
@@ -25,10 +25,10 @@ class _BottomNavbarState extends State<BottomNavbar> {
     {"contColor": Colors.red, "icon": Icons.search, "isCenterIcon": true},
     {
       "contColor": Colors.red,
-      "icon": Icons.notifications_on,
+      "icon": Icons.notifications_on_outlined,
       "isCenterIcon": false,
     },
-    {"contColor": Colors.red, "icon": Icons.person, "isCenterIcon": false},
+    {"contColor": Colors.red, "icon": Icons.person_outline, "isCenterIcon": false},
   ];
 
   final List<Widget> screens = const [
@@ -76,6 +76,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
       child: Container(
         height: 50,
         width: 50,
+      
         decoration: BoxDecoration(
           color: isCenterIcon ? contColor : Colors.transparent,
           shape: BoxShape.circle,
